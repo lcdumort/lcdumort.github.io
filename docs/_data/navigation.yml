@@ -1,0 +1,12 @@
+# main links
+main:
+  - title: "About"
+    url:  /About/
+  - title: "Blogs"
+    url: /Blogs/
+  - title: "Gallery"
+    url: /gallery/
+  - title: "External Links"
+    url: /links/
+  - title: "txt"
+    url: /txt/
