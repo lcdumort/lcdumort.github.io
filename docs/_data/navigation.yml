@@ -1,9 +1,10 @@
+# main links
 main:
-  - title: "Posts"
-    url: /posts/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
   - title: "About"
-    url: /about/
+    url:  /About/
+  - title: "Blogs"
+    url: /Blogs/
+  - title: "Gallery"
+    url: /gallery/
+  - title: "External Links"
+    url: /links/
