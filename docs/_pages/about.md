@@ -7,7 +7,8 @@ author_profile: true
 ---
 
 
-I am a 1st year PhD student at the Department of Physical Engineering, Ghent University. My research concentration is developing new, machine learning based optimization techniques for reactive molecular dynamics. I am interested in learning more about state-of-the-art learning methods, and applying them to solve real world problems.
+I am a 1st year PhD student at the Center for Molecular Modeling, Faculty of Sciences, Ghent University. My research concentration is developing machine learning based optimization techniques for reactive molecular dynamics. I am interested in learning more about state-of-the-art learning methods, and applying them to solve classical scientific problems.
+
 
 
 ### Education:
@@ -16,3 +17,5 @@ I am a 1st year PhD student at the Department of Physical Engineering, Ghent Uni
 - **Ghent University** (2014 - 2020)   
   Master of Science in Chemistry
  
+### Languages:
+- Fluent in Dutch, English and French.
