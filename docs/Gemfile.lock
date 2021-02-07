@@ -262,7 +262,9 @@ DEPENDENCIES
   github-pages
   jekyll-feed
   jekyll-include-cache
+  jekyll-remote-theme
   jekyll-theme-cayman
+  jemoji
   minima
   tzinfo (~> 1.2)
   tzinfo-data
