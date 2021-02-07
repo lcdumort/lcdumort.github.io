@@ -30,9 +30,10 @@ twitter_username: lcdumortier
 github_username:  lcdumort
 
 # Build settings
-theme: jekyll-theme-cayman
+remote_theme: mmistakes/minimal-mistakes
 plugins:
   - jekyll-feed
+  - jekyll-include-cache
 
 # Exclude from processing.
 # The following items will not be processed, by default.
