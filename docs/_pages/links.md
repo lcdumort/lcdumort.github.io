@@ -6,6 +6,8 @@ author_profile: true
 ---
 
 <br><br>
-[Yale Center for Statistical Genomics and Proteomics](http://zhaocenter.org/)
+[Ghent University](https://www.ugent.be/en)
 
-[Forrest Crawford Lab](http://www.crawfordlab.io/)
+[Center for Molecular Modeling](https://molmod.ugent.be/)
+
+[IFP Energies nouvelles](https://www.ifpenergiesnouvelles.fr/)
