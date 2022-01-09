@@ -21,7 +21,7 @@ In our simple example, we will consider a simple, irreversible consecutive react
 <!-- $A \xrightarrow{k_1} B \xrightarrow{k_2} C$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=A%20%5Cxrightarrow%7Bk_1%7D%20B%20%5Cxrightarrow%7Bk_2%7D%20C">
 
 ### Reaction rate
-The rate with which a reactant converts to a product is called a reaction rate. This can however only be conveniently build for elemental reactions. But since we learned that complex reactions are, in the end, a combination of elemental steps with intermediate products, we can thus expect that the reaction rate from a complex reaction is mathematical combination of elementary reaction rates.
+The rate with which a reactant converts to a product is called a reaction rate. This can however only be conveniently build for elemental reactions. But since we learned that complex reactions are, in the end, a combination of elemental steps with intermediate products, we can thus expect that the reaction rate from a complex reaction is a mathematical combination of elementary reaction rates.
 
 The reaction rate of an elementary reaction depends on the reactant concentration <!-- $[Reactant]$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=%5BReactant%5D"> and rate constant <!-- $k$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=k">.
 For the first reaction <!-- $A \xrightarrow{k_1} B$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=A%20%5Cxrightarrow%7Bk_1%7D%20B">, the reaction rate is:
@@ -37,16 +37,16 @@ Which we can again convert:
 The last unknown, <!-- $[C]$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=%5BC%5D">, is expressed again in a similar way as the conversion from <!-- $[B]$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=%5BB%5D"> with rate constant <!-- $k_2$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=k_2">:
 <!-- $\frac{d[C]}{dt}=k_2[B]$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=%5Cfrac%7Bd%5BC%5D%7D%7Bdt%7D%3Dk_2%5BB%5D">
 
-By using the previous equations, we find:
+By using the previous equations, one can eventually find:
 <!-- $[C]=[A]_0 \left(1+\frac{1}{k_1-k_2}\left( k_2e^{-k_1t}-k_1e^{-k_2t}\right) \right)$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=%5BC%5D%3D%5BA%5D_0%20%5Cleft(1%2B%5Cfrac%7B1%7D%7Bk_1-k_2%7D%5Cleft(%20k_2e%5E%7B-k_1t%7D-k_1e%5E%7B-k_2t%7D%5Cright)%20%5Cright)">
 
-It is interesting that, given the rate constant for the reactions, all concentrations at time $t$ can be calculated from the initial concentration of reactant <!-- $[A]$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=%5BA%5D">. Now let's go the fun part and implement this in Python!
+It is interesting that, given the rate constant for the reactions, all concentrations at time <!-- $t$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=t"> can be calculated from the initial concentration of reactant <!-- $[A]$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=%5BA%5D">. Now let's go the fun part and implement this in Python!
 
 --------------------------------------------------------------
 
 ## Implementation in Python
 ### Installation of Dependencies
-I assume that you have already installed python on your system. If not, there are plenty of tutorials available on how to do so for your operating system. Further, we rely on 2 modules: `numpy` and `matplotlib`. `numpy` is a linear algebra library that allows us to use arrays to represent vectors and matrices. Apart from the operations that it introduces, it is blazing fast compared with standard Python! Matplotlib is a widely used library to plot publication-ready graphs and figures of your data.
+I assume that you have already installed python on your system. If not, there are plenty of tutorials available on how to do so for your operating system. Further, we rely on 2 modules: `numpy` and `matplotlib`. `numpy` is a linear algebra library that allows us to use arrays to represent vectors and matrices. Apart from the mathematical operations that it introduces, it is blazing fast compared with standard Python code! `Matplotlib` on the other hand is a widely used library to plot high-quality, publication-ready graphs and figures of your data.
 
 You should check if you have installed these by importing them in a Python shell:
 ```python
@@ -55,7 +55,7 @@ $ python
 >>> import numpy as np
 >>> import matplotlib.pyplot as plt
 ```
-When running those lines, you should just be prompted on a new line without any output. If you receive an error in one of those lines, you most likely haven't installed them.
+When running those lines, you should just be prompted a new line without any output. If you receive an error in one of those lines, you most likely haven't installed them.
 you can conveniently install these through `pip` by running (in a Bash shell!):
 ```
 $ pip install [package]
@@ -67,7 +67,7 @@ $ pip install numpy
 $ pip install matplotlib
 ```
 
-Now retry to import them in a Python shell
+Now retry to import them in a Python shell.
 
 ### Calculating the concentrations
 The time and concentration data will be represented as numpy vectors. Therefore, we should first import the numpy library by running `import numpy as np`.
