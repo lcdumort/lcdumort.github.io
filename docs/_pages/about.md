@@ -5,8 +5,6 @@ permalink: /About/
 comments: true
 author_profile: true
 ---
-
-
 I am a 2nd year PhD student at the Center for Molecular Modeling, Faculty of Sciences, Ghent University. My research concentrates on developing machine learning based optimization techniques for reactive molecular dynamics. I am interested in learning more about state-of-the-art learning methods, and applying them to solve classical scientific problems.
 
 When not working on my PhD, I have multiple hobbies. My passion for coding does not end at working hours. I like to develop projects related to real-world problems or writing some handy scripts. I also combine coding with another passion, cryptocurrencies. 
