@@ -17,47 +17,47 @@ It is therefore that I write this small tutorial on a sunday evening with great 
 ## Theory of consecutive reaction kinetics
 Chemical reactions can be roughly separated in elementary reactions and complex reactions. The latter can be understood as a combination of multiple elementary reactions, where an elementary reaction forms a reaction intermediate that serves as a reactant for another chemical reaction. The combination of those steps is then called a reaction mechanism. Unveiling reaction mechanisms is a major focus for many chemists!
 
-In our simple example, we will consider a simple, irreversible consecutive reaction of a component  <!-- $A$ --> <img style="transform: translateY(0.1em); background: white;" src="../svg/b4U059zXKf.svg"> that reacts to <!-- $C$ --> <img style="transform: translateY(0.1em); background: white;" src="../svg/XksDri1Lfr.svg"> through intermediate <!-- $B$ --> <img style="transform: translateY(0.1em); background: white;" src="../svg/EJ5nLiWt60.svg">:
+In our simple example, we will consider a simple, irreversible consecutive reaction of a component  <!-- $A$ --> <img style="transform: translateY(0.1em); background: white;" src="/assets/svg/b4U059zXKf.svg"> that reacts to <!-- $C$ --> <img style="transform: translateY(0.1em); background: white;" src="/assets/svg/XksDri1Lfr.svg"> through intermediate <!-- $B$ --> <img style="transform: translateY(0.1em); background: white;" src="/assets/svg/EJ5nLiWt60.svg">:
 <!-- $$A \xrightarrow{k_1} B \xrightarrow{k_2} C$$ --> 
 
-<div align="center"><img style="background: white;" src="../svg/9HXwxXUJC1.svg"></div>
+<div align="center"><img style="background: white;" src="/assets/svg/9HXwxXUJC1.svg"></div>
 
 
 ### Reaction rate
 The rate with which a reactant converts to a product is called a reaction rate. This can however only be conveniently build for elemental reactions. But since we learned that complex reactions are, in the end, a combination of elemental steps with intermediate products, we can thus expect that the reaction rate from a complex reaction is a mathematical combination of elementary reaction rates.
 
-The reaction rate of an elementary reaction depends on the reactant concentration <!-- $[Reactant]$ --> <img style="transform: translateY(0.1em); background: white;" src="../svg/E8A8jUP3kl.svg"> and rate constant <!-- $k$ --> <img style="transform: translateY(0.1em); background: white;" src="../svg/0Pmo1uIeCt.svg">.
-For the first reaction <!-- $A \xrightarrow{k_1} B$ --> <img style="transform: translateY(0.1em); background: white;" src="../svg/c7AJvbcm9j.svg">, the reaction rate is:
+The reaction rate of an elementary reaction depends on the reactant concentration <!-- $[Reactant]$ --> <img style="transform: translateY(0.1em); background: white;" src="/assets/svg/E8A8jUP3kl.svg"> and rate constant <!-- $k$ --> <img style="transform: translateY(0.1em); background: white;" src="/assets/svg/0Pmo1uIeCt.svg">.
+For the first reaction <!-- $A \xrightarrow{k_1} B$ --> <img style="transform: translateY(0.1em); background: white;" src="/assets/svg/c7AJvbcm9j.svg">, the reaction rate is:
 
 <!-- $$\frac{d[A]}{dt}=-k_1[A]$$ --> 
 
-<div align="center"><img style="background: white;" src="../svg/mEvr1SB7vl.svg"></div>
+<div align="center"><img style="background: white;" src="/assets/svg/mEvr1SB7vl.svg"></div>
 
-This equation shows the change in <!-- $[A]$ --> <img style="transform: translateY(0.1em); background: white;" src="../svg/TCIq7C97wh.svg"> over an infinitely small time interval <!-- $t$ --> <img style="transform: translateY(0.1em); background: white;" src="../svg/LcawQA12yv.svg">. <!-- $-k_1$ --> <img style="transform: translateY(0.1em); background: white;" src="../svg/Bzw5YJHdpi.svg"> has units <!-- $s^{-1}$ --> <img style="transform: translateY(0.1em); background: white;" src="../svg/XiRtKv3Ewa.svg">, such that the unit of our expression will be in unit <!-- $\frac{mol}{s}$ --> <img style="transform: translateY(0.1em); background: white;" src="../svg/GyKgEDeetb.svg">. To have an expression for <!-- $[A]$ --> <img style="transform: translateY(0.1em); background: white;" src="../svg/Bto5CYeNUI.svg"> after a certain time <!-- $t$ --> <img style="transform: translateY(0.1em); background: white;" src="../svg/ZqMlE6FB39.svg">, we should integrate the expression over our time interval:
+This equation shows the change in <!-- $[A]$ --> <img style="transform: translateY(0.1em); background: white;" src="/assets/svg/TCIq7C97wh.svg"> over an infinitely small time interval <!-- $t$ --> <img style="transform: translateY(0.1em); background: white;" src="/assets/svg/LcawQA12yv.svg">. <!-- $-k_1$ --> <img style="transform: translateY(0.1em); background: white;" src="/assets/svg/Bzw5YJHdpi.svg"> has units <!-- $s^{-1}$ --> <img style="transform: translateY(0.1em); background: white;" src="/assets/svg/XiRtKv3Ewa.svg">, such that the unit of our expression will be in unit <!-- $\frac{mol}{s}$ --> <img style="transform: translateY(0.1em); background: white;" src="/assets/svg/GyKgEDeetb.svg">. To have an expression for <!-- $[A]$ --> <img style="transform: translateY(0.1em); background: white;" src="/assets/svg/Bto5CYeNUI.svg"> after a certain time <!-- $t$ --> <img style="transform: translateY(0.1em); background: white;" src="/assets/svg/ZqMlE6FB39.svg">, we should integrate the expression over our time interval:
 <!-- $$[A]=[A]_0 e^{-k_1t}$$ --> 
 
-<div align="center"><img style="background: white;" src="../svg/WxzVitxfJZ.svg"></div>
+<div align="center"><img style="background: white;" src="/assets/svg/WxzVitxfJZ.svg"></div>
 
-To calculate <!-- $[B]$ --> <img style="transform: translateY(0.1em); background: white;" src="../svg/tYAae2F1aX.svg">, we should look at how fast <!-- $B$ --> <img style="transform: translateY(0.1em); background: white;" src="../svg/mCceOWhVOT.svg"> is being formed but also to how fast <!-- $B$ --> <img style="transform: translateY(0.1em); background: white;" src="../svg/fJuxR2x6e9.svg"> reacts to <!-- $C$ --> <img style="transform: translateY(0.1em); background: white;" src="../svg/HwmRGj4Epp.svg">:
+To calculate <!-- $[B]$ --> <img style="transform: translateY(0.1em); background: white;" src="/assets/svg/tYAae2F1aX.svg">, we should look at how fast <!-- $B$ --> <img style="transform: translateY(0.1em); background: white;" src="/assets/svg/mCceOWhVOT.svg"> is being formed but also to how fast <!-- $B$ --> <img style="transform: translateY(0.1em); background: white;" src="/assets/svg/fJuxR2x6e9.svg"> reacts to <!-- $C$ --> <img style="transform: translateY(0.1em); background: white;" src="/assets/svg/HwmRGj4Epp.svg">:
 <!-- $$\frac{d[B]}{dt}=k_1[A]-k_2[C]$$ --> 
 
-<div align="center"><img style="background: white;" src="../svg/NUTe4frDPt.svg"></div>
+<div align="center"><img style="background: white;" src="/assets/svg/NUTe4frDPt.svg"></div>
 Which we can again convert:
 <!-- $$[B]=\frac{k_1[A]_0}{k_2-k_1} \left( k_2e^{-k_1t}-k_1e^{-k_2t} \right)$$ --> 
 
-<div align="center"><img style="background: white;" src="../svg/BZUdx0VfX4.svg"></div>
+<div align="center"><img style="background: white;" src="/assets/svg/BZUdx0VfX4.svg"></div>
 
-The last unknown, <!-- $[C]$ --> <img style="transform: translateY(0.1em); background: white;" src="../svg/0wuacebIXb.svg">, is expressed again in a similar way as the conversion from <!-- $[B]$ --> <img style="transform: translateY(0.1em); background: white;" src="../svg/YyTs9On79W.svg"> with rate constant <!-- $k_2$ --> <img style="transform: translateY(0.1em); background: white;" src="../svg/E1cEuD5wY2.svg">:
+The last unknown, <!-- $[C]$ --> <img style="transform: translateY(0.1em); background: white;" src="/assets/svg/0wuacebIXb.svg">, is expressed again in a similar way as the conversion from <!-- $[B]$ --> <img style="transform: translateY(0.1em); background: white;" src="/assets/svg/YyTs9On79W.svg"> with rate constant <!-- $k_2$ --> <img style="transform: translateY(0.1em); background: white;" src="/assets/svg/E1cEuD5wY2.svg">:
 <!-- $$\frac{d[C]}{dt}=k_2[B]$$ --> 
 
-<div align="center"><img style="background: white;" src="../svg/cAQS9b3cdz.svg"></div>
+<div align="center"><img style="background: white;" src="/assets/svg/cAQS9b3cdz.svg"></div>
 
 By using the previous equations, one can eventually find:
 <!-- $$[C]=[A]_0 \left(1+\frac{1}{k_1-k_2}\left( k_2e^{-k_1t}-k_1e^{-k_2t}\right) \right)$$ --> 
 
-<div align="center"><img style="background: white;" src="../svg/SoJqe4cXyX.svg"></div>
+<div align="center"><img style="background: white;" src="/assets/svg/SoJqe4cXyX.svg"></div>
 
-It is interesting that, given the rate constant for the reactions, all concentrations at time <!-- $t$ --> <img style="transform: translateY(0.1em); background: white;" src="../svg/piHBrSpqwr.svg"> can be calculated from the initial concentration of reactant  <!-- $[A]$ --> <img style="transform: translateY(0.1em); background: white;" src="../svg/I7uMa1lpO1.svg">. Now let's go the fun part and implement this in Python!
+It is interesting that, given the rate constant for the reactions, all concentrations at time <!-- $t$ --> <img style="transform: translateY(0.1em); background: white;" src="/assets/svg/piHBrSpqwr.svg"> can be calculated from the initial concentration of reactant  <!-- $[A]$ --> <img style="transform: translateY(0.1em); background: white;" src="/assets/svg/I7uMa1lpO1.svg">. Now let's go the fun part and implement this in Python!
 
 --------------------------------------------------------------
 
@@ -88,20 +88,20 @@ Now retry to import them in a Python shell
 
 ### Calculating the concentrations
 The time and concentration data will be represented as numpy vectors. Therefore, we should first import the numpy library by running `import numpy as np`.
-Now we can proceed to implement the derived equations in Python. First of all, we should define the initial concentration of <!-- $[A]$ --> <img style="transform: translateY(0.1em); background: white;" src="../svg/lKRb7vteni.svg">, the time interval of interest and the rate constants of the two elemental reactions:
+Now we can proceed to implement the derived equations in Python. First of all, we should define the initial concentration of <!-- $[A]$ --> <img style="transform: translateY(0.1em); background: white;" src="/assets/svg/lKRb7vteni.svg">, the time interval of interest and the rate constants of the two elemental reactions:
 ```python
 time = np.arange(0.0, 5.0, 0.001)
 conc_A_0 = float(10)
 k1, k2 = 1, 2
 ```
-Here we created a numpy vector `time` that represents our time interval. It starts at `t=0.0` seconds up until `t=4.999` seconds with intervals of 1 millisecond. Subsequently, we set the initial concentration of <!-- $[A]_0$ --> <img style="transform: translateY(0.1em); background: white;" src="../svg/neXxNxyfFY.svg"> to 10 <!-- $\frac{mol}{L}$ --> <img style="transform: translateY(0.1em); background: white;" src="../svg/XoCgdEeExw.svg">. Finally, we set the rate constant for reactions to 1 and 2. Feel free to play around with those values or implement an interactive way to change them! (hint: look at [matplotlib sliders](https://matplotlib.org/stable/gallery/widgets/slider_demo.html))
+Here we created a numpy vector `time` that represents our time interval. It starts at `t=0.0` seconds up until `t=4.999` seconds with intervals of 1 millisecond. Subsequently, we set the initial concentration of <!-- $[A]_0$ --> <img style="transform: translateY(0.1em); background: white;" src="/assets/svg/neXxNxyfFY.svg"> to 10 <!-- $\frac{mol}{L}$ --> <img style="transform: translateY(0.1em); background: white;" src="/assets/svg/XoCgdEeExw.svg">. Finally, we set the rate constant for reactions to 1 and 2. Feel free to play around with those values or implement an interactive way to change them! (hint: look at [matplotlib sliders](https://matplotlib.org/stable/gallery/widgets/slider_demo.html))
 
-For <!-- $[A]$ --> <img style="transform: translateY(0.1em); background: white;" src="../svg/Brp8bZo1y5.svg">, the equation is fairly simple:
+For <!-- $[A]$ --> <img style="transform: translateY(0.1em); background: white;" src="/assets/svg/Brp8bZo1y5.svg">, the equation is fairly simple:
 ```python
 conc_A = conc_A_0 * np.exp(-k1*time)
 ```
 
-The equations of <!-- $[B]$ --> <img style="transform: translateY(0.1em); background: white;" src="../svg/MCswl0yhmk.svg"> and <!-- $[C]$ --> <img style="transform: translateY(0.1em); background: white;" src="../svg/4mocUotCOa.svg"> are a bit more complicated, but rather straightforward nonetheless:
+The equations of <!-- $[B]$ --> <img style="transform: translateY(0.1em); background: white;" src="/assets/svg/MCswl0yhmk.svg"> and <!-- $[C]$ --> <img style="transform: translateY(0.1em); background: white;" src="/assets/svg/4mocUotCOa.svg"> are a bit more complicated, but rather straightforward nonetheless:
 ```python
 conc_B = conc_A_0 * (k1/(k2-k1))*(np.exp(-k1*time)-np.exp(-k2*time))
 conc_C = conc_A_0 * (1 + (1/(k2-k1))*(k1 * np.exp(-k2 * time) - k2 * np.exp(-k1 * time)))
@@ -135,7 +135,7 @@ And our plot is ready! You can view it by running `plt.show()` after running all
 ![cons_reaction.png](/assets/post_images/cons_reaction.png)
 
 
-As we can see, the concentration of <!-- $A$ --> <img style="transform: translateY(0.1em); background: white;" src="../svg/lwG5Cc12z4.svg"> starts at <!-- $[A]_0$ --> <img style="transform: translateY(0.1em); background: white;" src="../svg/NkXR6YzAJJ.svg"> but immediately converts irreversibly to <!-- $B$ --> <img style="transform: translateY(0.1em); background: white;" src="../svg/g3blGsISVR.svg">, causing a surge in concentration of <!-- $B$ --> <img style="transform: translateY(0.1em); background: white;" src="../svg/zrCVNNJPlP.svg">. But remember that <!-- $B$ --> <img style="transform: translateY(0.1em); background: white;" src="../svg/AVzcJnk59g.svg"> is the fuel for the second elemental reaction: <!-- $C$ --> <img style="transform: translateY(0.1em); background: white;" src="../svg/xwVo4OlL2r.svg"> is being formed! Now that the amount of <!-- $A$ --> <img style="transform: translateY(0.1em); background: white;" src="../svg/D8N1yvljzo.svg"> in the system is drastically decreasing, the formation of <!-- $B$ --> <img style="transform: translateY(0.1em); background: white;" src="../svg/b7uXpj4egh.svg">  slows down. The conversion rate of <!-- $B$ --> <img style="transform: translateY(0.1em); background: white;" src="../svg/xzxgnFpCQ1.svg">  to <!-- $C$ --> <img style="transform: translateY(0.1em); background: white;" src="../svg/cEY3AGZpsW.svg"> still increases, up until the conversion to <!-- $C$ --> <img style="transform: translateY(0.1em); background: white;" src="../svg/r0sFcbNm1N.svg"> is faster than the formation of <!-- $B$ --> <img style="transform: translateY(0.1em); background: white;" src="../svg/RQBCkj6yXX.svg">: we have reached our maximum <!-- $B$ --> <img style="transform: translateY(0.1em); background: white;" src="../svg/KLyVqswgYa.svg"> concentration in our time interval. Now it is just a matter of time before everything is converted to <!-- $C$ --> <img style="transform: translateY(0.1em); background: white;" src="../svg/cXTSPSLQV9.svg">.
+As we can see, the concentration of <!-- $A$ --> <img style="transform: translateY(0.1em); background: white;" src="/assets/svg/lwG5Cc12z4.svg"> starts at <!-- $[A]_0$ --> <img style="transform: translateY(0.1em); background: white;" src="/assets/svg/NkXR6YzAJJ.svg"> but immediately converts irreversibly to <!-- $B$ --> <img style="transform: translateY(0.1em); background: white;" src="/assets/svg/g3blGsISVR.svg">, causing a surge in concentration of <!-- $B$ --> <img style="transform: translateY(0.1em); background: white;" src="/assets/svg/zrCVNNJPlP.svg">. But remember that <!-- $B$ --> <img style="transform: translateY(0.1em); background: white;" src="/assets/svg/AVzcJnk59g.svg"> is the fuel for the second elemental reaction: <!-- $C$ --> <img style="transform: translateY(0.1em); background: white;" src="/assets/svg/xwVo4OlL2r.svg"> is being formed! Now that the amount of <!-- $A$ --> <img style="transform: translateY(0.1em); background: white;" src="/assets/svg/D8N1yvljzo.svg"> in the system is drastically decreasing, the formation of <!-- $B$ --> <img style="transform: translateY(0.1em); background: white;" src="/assets/svg/b7uXpj4egh.svg">  slows down. The conversion rate of <!-- $B$ --> <img style="transform: translateY(0.1em); background: white;" src="/assets/svg/xzxgnFpCQ1.svg">  to <!-- $C$ --> <img style="transform: translateY(0.1em); background: white;" src="/assets/svg/cEY3AGZpsW.svg"> still increases, up until the conversion to <!-- $C$ --> <img style="transform: translateY(0.1em); background: white;" src="/assets/svg/r0sFcbNm1N.svg"> is faster than the formation of <!-- $B$ --> <img style="transform: translateY(0.1em); background: white;" src="/assets/svg/RQBCkj6yXX.svg">: we have reached our maximum <!-- $B$ --> <img style="transform: translateY(0.1em); background: white;" src="/assets/svg/KLyVqswgYa.svg"> concentration in our time interval. Now it is just a matter of time before everything is converted to <!-- $C$ --> <img style="transform: translateY(0.1em); background: white;" src="/assets/svg/cXTSPSLQV9.svg">.
 
 ### Total Script
 ```python
