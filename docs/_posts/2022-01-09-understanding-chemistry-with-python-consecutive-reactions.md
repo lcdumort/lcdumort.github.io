@@ -17,22 +17,22 @@ It is therefore that I write this small tutorial on a sunday evening with great 
 ## Theory of consecutive reaction kinetics
 Chemical reactions can be roughly separated in elementary reactions and complex reactions. The latter can be understood as a combination of multiple elementary reactions, where an elementary reaction forms a reaction intermediate that serves as a reactant for another chemical reaction. The combination of those steps is then called a reaction mechanism. Unveiling reaction mechanisms is a major focus for many chemists!
 
-In our simple example, we will consider a simple, irreversible consecutive reaction of a component $A$ that reacts to $C$ through intermediate $B$:
+In our simple example, we will consider a simple, irreversible consecutive reaction of a component _A_ that reacts to _C_ through intermediate _B_:
 
 $A \xrightarrow{k_1} B \xrightarrow{k_2} C$
 
 ### Reaction rate
 The rate with which a reactant converts to a product is called a reaction rate. This can however only be conveniently build for elemental reactions. But since we learned that complex reactions are, in the end, a combination of elemental steps with intermediate products, we can thus expect that the reaction rate from a complex reaction is mathematical combination of elementary reaction rates.
 
-The reaction rate of an elementary reaction depends on the reactant concentration $[Reactant]$and rate constant $k$.
-For the first reaction $A \xrightarrow{k_1} B$, the reaction rate is:
+The reaction rate of an elementary reaction depends on the reactant concentration and rate constant _k_.
+For the first reaction, the reaction rate is:
 
 $\frac{d[A]}{dt}=-k_1[A]$.
 
-This equation shows the change in $[A]$ over an infinitely small time interval $t$. $-k_1$ has units $s^{-1}$, such that the unit of our expression will become $\frac{mol}{s}$. To have an expression for $[A]$ after a certain time $t$, we should integrate the expression over our time interval:
+This equation shows the change in _[A]_ over an infinitely small time interval _t_. $-k_1$ has units $s^{-1}$, such that the unit of our expression will become $\frac{mol}{s}$. To have an expression for $[A]$ after a certain time $t$, we should integrate the expression over our time interval:
 $$[A]=[A]_0 e^{-k_1t}$$
 
-To calculate $[B]$, we should look at how fast $B$ is being formed but also to how fast $B$ reacts to $C$:
+To calculate [B], we should look at how fast _B_ is being formed but also to how fast _B_ reacts to _C_:
 $$\frac{d[B]}{dt}=k_1[A]-k_2[C]$$
 Which we can again convert:
 $$[B]=\frac{k_1[A]_0}{k_2-k_1} \left( k_2e^{-k_1t}-k_1e^{-k_2t} \right)$$
@@ -121,7 +121,7 @@ And our plot is ready! You can view it by running `plt.show()` after running all
 ![cons_reaction.png](:/319cd54deb50426397f88519b42cb371)
 
 
-As we can see, the concentration of $A$ starts at $[A]_0$ but immediately converts irreversibly to $B$, causing a bumb in concentration of $B$. But remember that $B$ is the fuel for the second elemental reaction: $C$ is being formed! Now that the amount of $A$ in the system is drastically decreasing, the formation of $B$ slows down. The conversion rate of $B$ to $C$ still increases, up until the conversion to $C$ is faster than the formation of $B$: we have reached our maximum $B$ concentration in our time interval. Now it is just a matter of time before everything is converted to $C$.
+As we can see, the concentration of $A$ starts at $[A]_0$ but immediately converts irreversibly to _B_, causing a bumb in concentration of _B_. But remember that _B_ is the fuel for the second elemental reaction: _C_ is being formed! Now that the amount of $A$ in the system is drastically decreasing, the formation of _B_ slows down. The conversion rate of _B_ to _C_ still increases, up until the conversion to _C_ is faster than the formation of _B_: we have reached our maximum _B_ concentration in our time interval. Now it is just a matter of time before everything is converted to _C_.
 
 ### Total Script
 ```python
