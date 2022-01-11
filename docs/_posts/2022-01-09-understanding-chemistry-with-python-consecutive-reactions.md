@@ -26,7 +26,9 @@ The rate with which a reactant converts to a product is called a reaction rate. 
 
 The reaction rate of an elementary reaction depends on the reactant concentration $[Reactant]$and rate constant $k$.
 For the first reaction $A \xrightarrow{k_1} B$, the reaction rate is:
-$$\frac{d[A]}{dt}=-k_1[A]$$.
+
+$\frac{d[A]}{dt}=-k_1[A]$.
+
 This equation shows the change in $[A]$ over an infinitely small time interval $t$. $-k_1$ has units $s^{-1}$, such that the unit of our expression will become $\frac{mol}{s}$. To have an expression for $[A]$ after a certain time $t$, we should integrate the expression over our time interval:
 $$[A]=[A]_0 e^{-k_1t}$$
 
