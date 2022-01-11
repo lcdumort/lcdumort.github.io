@@ -18,32 +18,38 @@ It is therefore that I write this small tutorial on a sunday evening with great 
 Chemical reactions can be roughly separated in elementary reactions and complex reactions. The latter can be understood as a combination of multiple elementary reactions, where an elementary reaction forms a reaction intermediate that serves as a reactant for another chemical reaction. The combination of those steps is then called a reaction mechanism. Unveiling reaction mechanisms is a major focus for many chemists!
 
 In our simple example, we will consider a simple, irreversible consecutive reaction of a component _A_ that reacts to _C_ through intermediate _B_:
-<!-- 
-
-$A \xrightarrow{k_1} B \xrightarrow{k_2} C$
--->
+$$
+A \xrightarrow{k_1} B \xrightarrow{k_2} C
+$$
 
 ### Reaction rate
 The rate with which a reactant converts to a product is called a reaction rate. This can however only be conveniently build for elemental reactions. But since we learned that complex reactions are, in the end, a combination of elemental steps with intermediate products, we can thus expect that the reaction rate from a complex reaction is mathematical combination of elementary reaction rates.
 
 The reaction rate of an elementary reaction depends on the reactant concentration and rate constant _k_.
 For the first reaction, the reaction rate is:
-<!--
-$\frac{d[A]}{dt}=-k_1[A]$.
--->
+$$
+\frac{d[A]}{dt}=-k_1[A]
+$$
+
 This equation shows the change in _[A]_ over an infinitely small time interval _t_. $-k_1$ has units $s^{-1}$, such that the unit of our expression will become $\frac{mol}{s}$. To have an expression for $[A]$ after a certain time $t$, we should integrate the expression over our time interval:
 $$[A]=[A]_0 e^{-k_1t}$$
 
 To calculate [B], we should look at how fast _B_ is being formed but also to how fast _B_ reacts to _C_:
 $$\frac{d[B]}{dt}=k_1[A]-k_2[C]$$
 Which we can again convert:
-$$[B]=\frac{k_1[A]_0}{k_2-k_1} \left( k_2e^{-k_1t}-k_1e^{-k_2t} \right)$$
+
+$$
+[B]=\frac{k_1[A]_0}{k_2-k_1} \left( k_2e^{-k_1t}-k_1e^{-k_2t} \right)
+$$
 
 The last unknown, $[C]$, is expressed again in a similar way as the conversion from $[B]$ with rate constant $k_2$:
 $$\frac{d[C]}{dt}=k_2[B]$$
 
 By using the previous equations, we find:
-$$[C]=[A]_0 \left(1+\frac{1}{k_1-k_2}\left( k_2e^{-k_1t}-k_1e^{-k_2t}\right) \right)$$
+
+$$
+[C]=[A]_0 \left(1+\frac{1}{k_1-k_2}\left( k_2e^{-k_1t}-k_1e^{-k_2t}\right) \right)
+$$
 
 It is interesting that, given the rate constant for the reactions, all concentrations at time $t$ can be calculated from the initial concentration of reactant $[A]$. Now let's go the fun part and implement this in Python!
 
