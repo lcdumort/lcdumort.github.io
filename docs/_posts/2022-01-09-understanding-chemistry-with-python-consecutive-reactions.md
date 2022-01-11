@@ -121,7 +121,7 @@ And our plot is ready! You can view it by running `plt.show()` after running all
 ![cons_reaction.png](:/319cd54deb50426397f88519b42cb371)
 
 
-As we can see, the concentration of $A$ starts at $[A]_0$ but immediately converts irreversibly to _B_, causing a bumb in concentration of _B_. But remember that _B_ is the fuel for the second elemental reaction: _C_ is being formed! Now that the amount of $A$ in the system is drastically decreasing, the formation of _B_ slows down. The conversion rate of _B_ to _C_ still increases, up until the conversion to _C_ is faster than the formation of _B_: we have reached our maximum _B_ concentration in our time interval. Now it is just a matter of time before everything is converted to _C_.
+As we can see, the concentration of _A_ starts at $[A]_0$ but immediately converts irreversibly to _B_, causing a bumb in concentration of _B_. But remember that _B_ is the fuel for the second elemental reaction: _C_ is being formed! Now that the amount of _A_ in the system is drastically decreasing, the formation of _B_ slows down. The conversion rate of _B_ to _C_ still increases, up until the conversion to _C_ is faster than the formation of _B_: we have reached our maximum _B_ concentration in our time interval. Now it is just a matter of time before everything is converted to _C_.
 
 ### Total Script
 ```python
