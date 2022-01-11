@@ -18,8 +18,10 @@ It is therefore that I write this small tutorial on a sunday evening with great 
 Chemical reactions can be roughly separated in elementary reactions and complex reactions. The latter can be understood as a combination of multiple elementary reactions, where an elementary reaction forms a reaction intermediate that serves as a reactant for another chemical reaction. The combination of those steps is then called a reaction mechanism. Unveiling reaction mechanisms is a major focus for many chemists!
 
 In our simple example, we will consider a simple, irreversible consecutive reaction of a component _A_ that reacts to _C_ through intermediate _B_:
+<!-- 
 
 $A \xrightarrow{k_1} B \xrightarrow{k_2} C$
+-->
 
 ### Reaction rate
 The rate with which a reactant converts to a product is called a reaction rate. This can however only be conveniently build for elemental reactions. But since we learned that complex reactions are, in the end, a combination of elemental steps with intermediate products, we can thus expect that the reaction rate from a complex reaction is mathematical combination of elementary reaction rates.
