@@ -15,8 +15,7 @@ gallery2:
    - url: /assets/images/motorcycle/motor_20220730.jpg
     image_path: /assets/images/motorcycle/motor_20220730.jpg
     title: "Evening ride through West-Flanders"
-   
 ---
 
-{% include gallery caption="**Paris**" %}
+{% include gallery id="gallery" caption="**Paris**" %}
 {% include gallery id="gallery2" caption="**Motorcycle**" %}
