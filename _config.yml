@@ -1,0 +1,15 @@
+# Theme Settings
+remote_theme: "mmistakes/minimal-mistakes"
+plugins:
+  - jekyll-include-cache
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Site Settings
+title: "Your Name"
+url: "https://[your-username].github.io"
+repository: "[your-username]/[your-username].github.io"
+
+# Minimal Mistakes specific
+locale: "en-US"
+minimal_mistakes_skin: "default" # choose from: air, aqua, contrast, dark, dirt, neon, mint, sunrise
