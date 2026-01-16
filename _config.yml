@@ -7,8 +7,8 @@ plugins:
 
 # Site Settings
 title: "Your Name"
-url: "https://[your-username].github.io"
-repository: "[your-username]/[your-username].github.io"
+url: "https://lcdumort.github.io"
+repository: "lcdumort/lcdumort.github.io"
 
 # Minimal Mistakes specific
 locale: "en-US"
