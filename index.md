@@ -1,8 +1,6 @@
 ---
-layout: single
-title: "Testing Minimal Mistakes"
+layout: home
+author_profile: true
 ---
 
-If you see this text and the "Testing Minimal Mistakes" header, the theme is working! 
-
-[Check if this button looks themed](/){: .btn .btn--primary}
+Welcome to my personal website and blog!

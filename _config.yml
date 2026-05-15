@@ -1,19 +1,80 @@
-# Site Settings
-title: My Minimal Site
-remote_theme: "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "default" # Try "air" or "contrast" to see if it changes
+# Site settings
+title: Loïc Dumortier Personal Website
+title_separator: "-"
+name: "Loïc Dumortier"
+email: loic.dumortier@proton.me
+description: >-
+  Personal website of Loïc Dumortier
+url: "https://lcdumort.github.io"
 
-# Build Settings
+# Build settings
+markdown: kramdown
+remote_theme: mmistakes/minimal-mistakes
+
+# Outputting
+permalink: /:categories/:title/
+paginate: 5
+paginate_path: /page:num/
+
+include:
+  - _pages
+
+# Plugins
 plugins:
-  - jekyll-remote-theme
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
   - jekyll-feed
+  - jemoji
   - jekyll-include-cache
 
-# Basic Defaults
+author:
+  name   : "Loïc Dumortier"
+  avatar : "/assets/images/bio-photo.jpg"
+  bio    : "PhD student in Physics at Ghent University, Belgium. Pythonista and crypto enthousiast."
+  location: "Ghent, Belgium"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: mailto:loic.dumortier@telenet.be
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/lcdumortier"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/lcdumort"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/dumortier-loic"
+
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/lcdumortier"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/lcdumort"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/dumortier-loic"
+
 defaults:
+  # _posts
   - scope:
       path: ""
       type: posts
     values:
       layout: single
-      author_profile: trues
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
