@@ -1,5 +1,5 @@
 # Site settings
-title: Loïc Dumortier Personal Website
+title: Personal website of Loïc Dumortier
 title_separator: "-"
 name: "Loïc Dumortier"
 email: loic.dumortier@proton.me
@@ -31,7 +31,7 @@ plugins:
 author:
   name   : "Loïc Dumortier"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "PhD in Physics"
+  bio    : "PhD in Physics, Master in Chemistry. Currently working at the German Aerospace Center on enabling Quantum Computing in Chemistry. Passionate about science & Technology."
   location: "Cologne, Germany"
   links:
     - label: "Email"
