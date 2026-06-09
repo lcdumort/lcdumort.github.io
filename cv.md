@@ -9,21 +9,21 @@ Here is an overview of my professional experience and educational background.
 
 ## Experience
 
-- **German Aerospace Center (DLR)** | Cologne, Germany | 2025 - 2026
+**German Aerospace Center (DLR)** | Cologne, Germany | 2025 - 2026
   - *Scientific Researcher*
   - Focus: Enabling Quantum Computing in Chemistry.
 
-- **IFP Energies Nouvelles** | Paris, France | 2020-2023
+**IFP Energies Nouvelles** | Paris, France | 2020-2023
   - *R&D Engineer*
   - Machine Learning for ReaxFF parameter optimization.
 
 ## Education
 
-- **Ghent University** | 2020 - 2025
+**Ghent University** | 2020 - 2025
   - *Ph.D. in Physics*
   - Research: Model-Informed Training Data Curation for Reactive All-Atom Potentials.
 
-- **Ghent University** | Ghent, Belgium | 2014 - 2020
+**Ghent University** | Ghent, Belgium | 2014 - 2020
   - *Master of Science in Chemistry*
   - Grade: Summa Cum Laude
   - Specialization in analytical chemistry and chemometrics.
