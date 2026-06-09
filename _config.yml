@@ -31,12 +31,12 @@ plugins:
 author:
   name   : "Loïc Dumortier"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "PhD student in Physics at Ghent University, Belgium. Pythonista and crypto enthousiast."
-  location: "Ghent, Belgium"
+  bio    : "PhD in Physics"
+  location: "Cologne, Germany"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: mailto:loic.dumortier@telenet.be
+      url: mailto:loic.dumortier[at]proton.me
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/lcdumortier"
