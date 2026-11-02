@@ -1,0 +1,37 @@
+{% assign publications = site.data.publications | sort: "year" | reverse %}
+{% if include.selected %}
+  {% assign publications = publications | where: "selected", true %}
+{% endif %}
+{% assign years = publications | map: "year" | uniq %}
+
+<div class="publication-list">
+{% for year in years %}
+  <h2 class="publication-year" id="year-{{ year }}">{{ year }}</h2>
+  {% for pub in publications %}
+    {% if pub.year == year %}
+      {% assign author_list = pub.authors | join: ", " | replace: "Loïc Dumortier", "<strong>Loïc Dumortier</strong>" %}
+      <article class="publication">
+        <h3 class="publication__title">{{ pub.title }}</h3>
+        <p class="publication__authors">{{ author_list }}</p>
+        <p class="publication__meta">
+          <em>{{ pub.venue }}</em>, {{ pub.year }}
+          <span class="publication__type">{{ pub.type }}</span>
+          {% if pub.note %}<span class="publication__note">{{ pub.note }}</span>{% endif %}
+        </p>
+        <p class="publication__links">
+          {% if pub.doi %}<a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">DOI</a>{% endif %}
+          {% if pub.arxiv %}<a href="https://arxiv.org/abs/{{ pub.arxiv }}" target="_blank" rel="noopener">arXiv</a>{% endif %}
+          {% if pub.pdf %}<a href="{{ pub.pdf | relative_url }}" target="_blank" rel="noopener">PDF</a>{% endif %}
+          {% if pub.url %}<a href="{{ pub.url }}" target="_blank" rel="noopener">Record</a>{% endif %}
+        </p>
+        {% if pub.bibtex %}
+        <details class="publication__bibtex">
+          <summary>BibTeX</summary>
+          <pre>{{ pub.bibtex | escape }}</pre>
+        </details>
+        {% endif %}
+      </article>
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+</div>

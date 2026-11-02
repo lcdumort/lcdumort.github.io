@@ -1,0 +1,60 @@
+- title: "Model-Informed Training Data Curation for Reactive All-Atom Potentials"
+  authors:
+    - "Loïc Dumortier"
+  venue: "Ghent University"
+  year: 2025
+  type: "PhD thesis"
+  selected: true
+  url: "https://biblio.ugent.be/publication/01K5X8ZHSY4J1BXBREV8S66FSG"
+  pdf: "/assets/thesis/Loic_Dumortier_PhD_Thesis.pdf"
+  note: "Defended 20 June 2025"
+  bibtex: |
+    @phdthesis{dumortier2025thesis,
+      author = {Loïc Dumortier},
+      title  = {Model-Informed Training Data Curation for Reactive All-Atom Potentials},
+      school = {Ghent University},
+      year   = {2025},
+      url    = {https://biblio.ugent.be/publication/01K5X8ZHSY4J1BXBREV8S66FSG}
+    }
+
+- title: "Managing Expectations and Imbalanced Training Data in Reactive Force Field Development: An Application to Water Adsorption on Alumina"
+  authors:
+    - "Loïc Dumortier"
+    - "Céline Chizallet"
+    - "Benoit Creton"
+    - "Theodorus de Bruin"
+    - "Toon Verstraelen"
+  venue: "Journal of Chemical Theory and Computation"
+  year: 2024
+  type: "Journal article"
+  selected: true
+  doi: "10.1021/acs.jctc.3c01009"
+  arxiv: "2404.14338"
+  bibtex: |
+    @article{dumortier2024managing,
+      author  = {Loïc Dumortier and Céline Chizallet and Benoit Creton and Theodorus de Bruin and Toon Verstraelen},
+      title   = {Managing Expectations and Imbalanced Training Data in Reactive Force Field Development: An Application to Water Adsorption on Alumina},
+      journal = {Journal of Chemical Theory and Computation},
+      year    = {2024},
+      doi     = {10.1021/acs.jctc.3c01009},
+      eprint  = {2404.14338},
+      archivePrefix = {arXiv}
+    }
+
+- title: "From Ionic Surfactants to Nafion through Convolutional Neural Networks"
+  authors:
+    - "Loïc Dumortier"
+    - "Stefano Mossa"
+  venue: "The Journal of Physical Chemistry B"
+  year: 2020
+  type: "Journal article"
+  selected: true
+  doi: "10.1021/acs.jpcb.0c06172"
+  bibtex: |
+    @article{dumortier2020ionic,
+      author  = {Loïc Dumortier and Stefano Mossa},
+      title   = {From Ionic Surfactants to Nafion through Convolutional Neural Networks},
+      journal = {The Journal of Physical Chemistry B},
+      year    = {2020},
+      doi     = {10.1021/acs.jpcb.0c06172}
+    }

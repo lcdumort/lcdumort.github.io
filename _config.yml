@@ -1,70 +1,97 @@
 # Site settings
-title: Personal website of Loïc Dumortier
+title: "Loïc Dumortier"
 title_separator: "-"
 name: "Loïc Dumortier"
 email: loic.dumortier@proton.me
 description: >-
-  Personal website of Loïc Dumortier
-url: "https://lcdumort.github.io"
+  Computational chemist and physicist working on machine learning for molecular
+  simulation, reactive force fields, and scientific software.
+url: "https://loicdumortier.com"
+baseurl: ""
+repository: "lcdumort/lcdumort.github.io"
+locale: "en-US"
+timezone: Europe/Berlin
 
 # Build settings
 markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes
+remote_theme: "mmistakes/minimal-mistakes@4.28.1"
+minimal_mistakes_skin: "default"
 
-# Outputting
-permalink: /:categories/:title/
-paginate: 5
-paginate_path: /page:num/
+# SEO and social sharing
+og_image: "/assets/images/og-image.jpg"
+og_image_alt: "Loïc Dumortier, PhD — computational chemistry, machine learning, and molecular simulation"
+twitter:
+  username: lcdumortier
+  card: summary_large_image
+
+social:
+  type: Person
+  name: "Loïc Dumortier"
+  links:
+    - "https://github.com/lcdumort"
+    - "https://linkedin.com/in/dumortier-loic"
+    - "https://twitter.com/lcdumortier"
+
+# There is no blog, so do not advertise an empty RSS feed.
+atom_feed:
+  hide: true
 
 # Plugins
 plugins:
-  - jekyll-paginate
+  - jekyll-remote-theme
   - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
   - jekyll-include-cache
 
+# Files that should not be published
+exclude:
+  - .github
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+
 author:
-  name   : "Loïc Dumortier"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "PhD in Physics, Master in Chemistry. Currently working at the German Aerospace Center on enabling Quantum Computing in Chemistry. Passionate about science & Technology."
+  name: "Loïc Dumortier"
+  avatar: "/assets/images/bio-photo.jpg"
+  bio: >-
+    Computational chemist and physicist at the German Aerospace Center (DLR),
+    working on machine learning for molecular simulation, reactive force fields,
+    and quantum computing in chemistry.
   location: "Cologne, Germany"
+  twitter: lcdumortier
   links:
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/dumortier-loic"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/lcdumort"
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:loic.dumortier@proton.me"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/lcdumortier"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/lcdumort"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/in/dumortier-loic"
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/lcdumortier"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/lcdumort"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://linkedin.com/in/dumortier-loic"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/lcdumort"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:loic.dumortier@proton.me"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/lcdumortier"
 
 defaults:
-  # _posts
   - scope:
       path: ""
-      type: posts
+      type: pages
     values:
       layout: single
       author_profile: true
-      read_time: true
-      comments: false
-      share: true
-      related: true
